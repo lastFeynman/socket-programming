@@ -29,8 +29,7 @@ def send_request(tid, url):
 
 
 if __name__ == "__main__":
-    # url = 'http://192.168.44.128:8080'
-    url = 'http://www.baidu.com'
+    url = 'http://192.168.44.128:8080'
     n = 10000
     threads = []
     error = 0
