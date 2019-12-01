@@ -29,8 +29,8 @@ def send_request(tid, url):
 
 
 if __name__ == "__main__":
-    url = 'http://192.168.44.128:8080'
-    n = 10000
+    url = 'http://192.168.1.107:8080/1/olivertwist.html'
+    n = 2000
     threads = []
     error = 0
 
@@ -48,6 +48,6 @@ if __name__ == "__main__":
             error += 1
 
     end = time.perf_counter()
-    print(str(error) + ' threads went wrong.')
+    print(str(error) + '(' +str(error/n) + ') threads went wrong.')
     print('total time: ' + str(end - start))
 
